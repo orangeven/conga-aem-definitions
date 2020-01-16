@@ -48,7 +48,7 @@ nodes:
         renderInstance:
           host: localhost
           port: 4502
-  - role: aem-dispatcher
+  - role: my-aem-dispatcher
     variants:
     - aem-publish
     - ssl

@@ -1,0 +1,18 @@
+inherits:
+  - role: aem-dispatcher
+
+variants:
+  - variant: aem-author
+  - variant: aem-publish
+  - variant: ssl
+  - variant: http2
+
+config:
+  
+  dispatcher:
+    # add a new filter rules
+    filter:
+      - _merge_
+      - url: /path/to/resouces
+        type: allow
+    
